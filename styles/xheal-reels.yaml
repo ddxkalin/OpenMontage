@@ -1,0 +1,127 @@
+identity:
+  name: "xHeal Reels"
+  category: motion-graphics
+  mood: intelligent, cinematic, clinical, human
+  pace: fast
+  best_for: "Vertical xHeal product stories, health-data explainers, founder case studies, and feature launches"
+
+taste_profile:
+  design_read: "Premium health intelligence with focused evidence, human stakes, and precise product motion."
+  visual_variance: 6
+  motion_intensity: 7
+  information_density: 5
+  palette_discipline: "Deep navy fields, white text, xHeal blue for hierarchy, and restrained semantic colors only for data."
+  layout_variation: "Alternate full-frame hooks, asymmetric evidence layouts, product close-ups, and clean payoff cards."
+  reference_strategy: "Establish one approved frame for hooks, data evidence, product UI, and CTA before batch production."
+  anti_patterns:
+    - "generic SaaS gradient cards"
+    - "floating glass panels without information value"
+    - "decorative medical symbols"
+    - "AI-generated visible text"
+    - "fear-based medical imagery"
+  quality_gates:
+    - "Every frame must clearly support the approved spoken beat."
+    - "Product and medical language must remain within the approved source claims."
+    - "Case studies must remain visibly identifiable as individual experiences."
+
+visual_language:
+  color_palette:
+    primary: ["#4764FF", "#2F48D8"]
+    accent: ["#39D9C8", "#FACC15", "#F87171"]
+    background: "#090D2C"
+    text: "#FFFFFF"
+    muted: "#A9B2D0"
+  composition: "Vertical editorial grid with one dominant claim or data relationship per frame, generous safe zones, and controlled depth"
+  texture: "Deep navy atmosphere, subtle clinical grain, restrained blue bloom, and sharp product surfaces"
+
+typography:
+  headings:
+    font: "SF Pro Display"
+    weight: 800
+    tracking: "-0.025em"
+  body:
+    font: "Helvetica Neue"
+    weight: 500
+    line_height: 1.35
+  stat_card:
+    font: "SF Pro Display"
+    weight: 800
+    size_multiplier: 3.4
+  scale_system: major_third
+  weight_matrix:
+    title: 800
+    heading: 700
+    body: 500
+    caption: 600
+
+motion:
+  transitions: [hard-cut, directional-wipe, data-convergence, fade]
+  animation_style: "Fast evidence-led reveals, precise spring motion, restrained camera depth, and no decorative movement"
+  pacing_rules:
+    min_scene_hold_seconds: 1.5
+    max_scene_hold_seconds: 8
+    text_card_hold_seconds: 2.5
+    stat_card_hold_seconds: 2.5
+    transition_duration_seconds: 0.3
+  entrance: "Opacity and 18px rise with a fast ease-out; data enters along meaningful paths"
+  exit: "Hard cut for urgency or short opacity fall after the spoken idea resolves"
+
+audio:
+  voice_style: "Conversational founder authority, credible and energetic without hype"
+  music_mood: "Forward-moving minimal electronic pulse with clinical clarity and a human emotional undertone"
+  music_volume: 0.08
+  sfx_style: "Restrained data ticks, soft interface confirmations, and low-impact transitions"
+  ducking_threshold_db: -5
+  voice_variation_allowed: true
+  hero_moment_voice_shift: "Slow slightly and add weight to the pattern reveal or evidence statement."
+  transition_voice_shift: "Use a short pause before moving from problem to connected insight."
+
+asset_generation:
+  image_prompt_prefix: "premium vertical health intelligence visual, deep navy environment, precise clinical data atmosphere, xHeal blue accent, cinematic lighting, text-free, "
+  image_negative_prompt: "visible text, letters, labels, logos, generic hospital stock photo, fear imagery, glossy SaaS gradient, clutter, excessive holograms"
+  diagram_style: "Sharp dark-mode health-data diagram with white structure, xHeal blue hierarchy, restrained semantic signal colors, and programmatic labels"
+  consistency_anchors:
+    - "Deep navy #090D2C background family"
+    - "xHeal blue #4764FF as the primary hierarchy color"
+    - "White high-contrast programmatic typography"
+    - "One clear evidence relationship per frame"
+    - "No visible text generated inside image or video assets"
+
+overlays:
+  stat_card:
+    bg: "#11183D"
+    border: "#3348A4"
+    text: "#FFFFFF"
+    radius: 18
+    shadow: "0 18px 50px rgba(2,4,18,0.45)"
+  key_term:
+    bg: "#1A255B"
+    border: "#4764FF"
+    text: "#FFFFFF"
+    radius: 12
+
+quality_rules:
+  - "All visible text must be rendered programmatically."
+  - "Minimum text contrast ratio is 4.5:1."
+  - "Captions use no more than two lines and remain inside vertical safe zones."
+  - "No scene may introduce medical claims beyond the approved source artifacts."
+  - "Do not imply diagnosis, prevention, treatment, or guaranteed prediction."
+  - "Required case-study and medical disclaimers must remain readable on the final render."
+  - "Product UI must be accurate or clearly presented as a conceptual visualization."
+  - "Do not use em-dashes in visible copy."
+
+chart_palette:
+  - "#4764FF"
+  - "#39D9C8"
+  - "#FACC15"
+  - "#F87171"
+  - "#A9B2D0"
+
+color_rules:
+  harmony_type: analogous
+  contrast_validation: true
+  colorblind_safe: true
+
+overrides:
+  max_deviation_ratio: 0.15
+  scene_overrides: []
