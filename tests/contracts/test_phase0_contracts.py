@@ -357,6 +357,15 @@ class TestCheckpoint:
 # ---- Pipeline manifests ----
 
 class TestPipelineManifests:
+    def test_all_pipeline_manifests_load(self):
+        failures = {}
+        for pipeline_name in list_pipelines():
+            try:
+                load_pipeline(pipeline_name)
+            except Exception as exc:
+                failures[pipeline_name] = str(exc)
+        assert failures == {}
+
     def test_framework_smoke_manifest_loads(self):
         manifest = load_pipeline("framework-smoke")
         assert manifest["name"] == "framework-smoke"
